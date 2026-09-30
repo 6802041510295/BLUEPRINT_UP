@@ -1,0 +1,54 @@
+{
+  "expo": {
+    "name": "BLUEPRINT",
+    "slug": "blueprint-ble",
+    "version": "2.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#fbf0f9"
+    },
+    "android": {
+      "package": "com.chayanis.blueprintble",
+      "versionCode": 2,
+      "edgeToEdgeEnabled": true,
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#f7d1e9"
+      },
+      "permissions": [
+        "android.permission.BLUETOOTH",
+        "android.permission.BLUETOOTH_ADMIN",
+        "android.permission.BLUETOOTH_CONNECT"
+      ]
+    },
+    "ios": {
+      "bundleIdentifier": "com.chayanis.blueprintble",
+      "supportsTablet": true
+    },
+    "plugins": [
+      [
+        "react-native-ble-plx",
+        {
+          "isBackgroundEnabled": false,
+          "neverForLocation": true,
+          "bluetoothAlwaysPermission": "Allow BLUEPRINT to connect to your teacher's Bluetooth device for the classroom assignment."
+        }
+      ],
+      "expo-font"
+    ],
+    "web": {
+      "bundler": "metro",
+      "name": "BLUEPRINT | English Y2K Preview"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "96283e04-88ad-4482-afe3-36a831c63585"
+      }
+    }
+  }
+}
